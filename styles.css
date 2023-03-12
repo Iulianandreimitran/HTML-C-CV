@@ -1,0 +1,365 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video*/ *{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*  END - resetter  */
+
+/* START - custom resetter */
+body {
+	font-family: 'Arial', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	letter-spacing: 1px;
+	background-color: #040F21;
+}
+
+a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+/* END - custom resetter */
+
+/* START - reusable styles */
+.container {
+	display: block;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+
+.link {
+	padding: 10px 10px;
+}
+/* END - reusable styles */
+
+/* START - header */
+.outer-container-header {
+	background-color: #040F21;
+	padding: 20px 0px;
+}
+
+.outer-hero-text {
+	min-height: 100vh;
+}
+
+.inner-container-header {
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.2rem;
+}
+
+.left-link {
+
+
+}
+
+.right-links {
+	display: flex;
+	gap: 10px;
+}
+
+.right-link {
+	display: block;
+	padding: 10px 10px;
+	transition: 0.5s;
+	border-radius: 5px;
+}
+
+.right-link:hover {
+	letter-spacing: 2px;
+	background-color: #092148;
+}
+
+/* END - header */
+
+/* START - hero */
+.outer-container-hero {
+	position: relative;
+	background-image: url('heroImage.jpg');
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 80vh;
+}
+
+.inner-container-hero {
+	
+}
+
+.text-container-hero {
+	position: absolute;
+	left: 50%;
+    top: 50%;
+	width: 600px;
+    transform: translate(-50%,-50%);
+	color: white;
+}
+
+.title-hero {
+	font-size: 3rem;
+	text-align: center;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+.text-hero {
+	text-align: center;
+	font-size: 1.1rem;
+	line-height: 1.1rem;
+}
+/* END - hero */
+
+/* START - cv */*
+.outer-container-cv-title {
+	min-height: 100vh;
+}
+
+.outer-container-cv {
+	display: block;
+	background-color: #040F21;
+	padding: 100px 0px;
+}
+
+.inner-container-cv {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.img-cv {
+	width: 400px;
+	border-radius: 10px;
+}
+
+.text-container-cv {
+	width: 50%;
+	color: #c8c8c8;
+}
+
+.title-cv {
+	font-weight: bold;
+	font-size: 3rem;
+	margin-bottom: 30px;
+	color: white;
+}
+
+.text-cv {
+	margin: 10px 0px;
+}
+
+.cta-cv {
+	display: block;
+	padding: 15px 20px;
+	background-color: #34CBCB;
+	color: #040F21;
+	font-weight: 900;
+	width: max-content;
+	border-radius: 5px;
+	margin-top: 20px;
+	transition: 0.5s;
+}
+
+.cta-cv:hover {
+	background-color: #D94A8F;
+}
+/* END - cv */
+
+/* START - TEXT ABOUT */
+.outer-container-text{
+	min-height: 100vh;
+}
+.inner-container-text{
+}
+.text-container-text {
+	display: grid;
+	justify-content: center;
+	left:50%;
+	right:50%;
+	width:100%;
+	margin-top: 200px;
+	text-align: center;
+	color: white;
+	font-size: 1.1rem;
+	
+}
+
+.text1{
+	
+}
+/* END - TEXT ABOUT */
+
+/* START - CONTACT PAGE*/
+.outer-hero-contact {
+	min-height: 100vh;
+}
+
+.text-container-contact{
+	display: block;
+	justify-content: center;
+	width: 100%;
+	margin-top: 200px;
+	text-align: center;
+	font-size: 2rem;
+	line-height: 2rem;
+	color: white;
+	
+}
+.text-contact-p{
+
+}
+.text-contact{
+	margin:10px 0px;
+}
+
+/* END - CONTACT PAGE*/
+
+/* START - CV PAGE */
+.inner-container-cv-title{
+}
+.text-container-cv-title{
+}
+.text-container-cv-text{
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+	margin-top: 100px;
+}
+.title-text-hero-cv {
+	text-align: center;
+	font-size: 2.2rem;
+	line-height: 2.2rem;
+	color: white;
+	margin-top: 150px;
+}
+
+.text-hero-cv{
+	text-align: left;
+	font-size: 0.9rem;
+	line-height: 0.9rem;
+	color: white;
+}
+
+/* END - CV PAGE */
+
+/* START - footer */
+.outer-container-footer {
+	background-color: #d6d6d6;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding: 10px 0px;
+} 
+
+.inner-container-footer {
+	
+}
+
+.cta-footer {
+	color: #040F21;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	width: max-content;
+	margin: 0 auto;
+}
+
+.img-cta-footer {
+	width: 40px;
+}
+
+.text-cta-footer {
+	font-weight: bold;
+}
+
+/* END - footer */
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 1250px) {
+	.container {
+		display: block;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.img-cv {
+		width: 40%;
+	}
+
+	.inner-container-cv {
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	.text-container-cv {
+		text-align: center;
+		width: 80%;
+	}
+
+	.cta-cv {
+		margin: 20px auto 0px auto;
+	}
+}
+
+
+@media only screen and (max-width: 800px) {
+	.img-cv {
+		width: 60%;
+	}
+
+	.text-container-hero {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.right-links {
+		display: none;
+	}
+}
